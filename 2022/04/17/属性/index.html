@@ -6,15 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="属性">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="http://example.com/2022/04/17/%E5%B1%9E%E6%80%A7/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="属性">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20211128153745471.png">
+<meta property="og:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20211128153857122.png">
+<meta property="og:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20211128154521792.png">
+<meta property="article:published_time" content="2022-04-17T10:22:06.528Z">
+<meta property="article:modified_time" content="2022-04-17T10:30:22.408Z">
 <meta property="article:author" content="废废的前端笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20211128153745471.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,212 +167,545 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-属性" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><span id="more"></span>
+
+<h5 id="1-文本属性"><a href="#1-文本属性" class="headerlink" title="1.文本属性"></a>1.文本属性</h5><h6 id="1-字体大小（font-size"><a href="#1-字体大小（font-size" class="headerlink" title="1.字体大小（font-size)"></a>1.字体大小（font-size)</h6><h6 id="2-字体样式-font-family"><a href="#2-字体样式-font-family" class="headerlink" title="2.字体样式(font-family)"></a>2.字体样式(font-family)</h6><h6 id="3-颜色-color"><a href="#3-颜色-color" class="headerlink" title="3.颜色(color)"></a>3.颜色(color)</h6><p>color：red;     color:rgb();[0-255 0最弱，255最强]    color：#fff（黑色）；[十六进制写法]</p>
+<h6 id="4-加粗-font-weight"><a href="#4-加粗-font-weight" class="headerlink" title="4.加粗(font-weight)"></a>4.加粗(font-weight)</h6><p>font-weight：normal（100-500）常规的</p>
+<p>font-weight：bolder&#x2F;bold（500-900）加粗 </p>
+<p> 100细体 400正常  700加粗  900更粗</p>
+<h6 id="5-倾斜-font-style"><a href="#5-倾斜-font-style" class="headerlink" title="5.倾斜(font-style)"></a>5.倾斜(font-style)</h6><p>font-style：italic（斜体字）</p>
+<p>font-style：oblique（倾斜的文字）</p>
+<p>font-style：normal（常规显示）</p>
+<h6 id="6-文本水平对齐-text-align"><a href="#6-文本水平对齐-text-align" class="headerlink" title="6.文本水平对齐(text-align)"></a>6.文本水平对齐(text-align)</h6><p>text-alight：left（水平靠左）；</p>
+<p>text-alight： right（水平靠右；）</p>
+<p>text-alight： center（水平居中）；</p>
+<p>text-alight：  justify（水平两端对齐，只对多行起作用）</p>
+<h6 id="7-行高"><a href="#7-行高" class="headerlink" title="7.行高"></a>7.行高</h6><p>line-height：2em（垂直居中）</p>
+<h6 id="8-首行缩进"><a href="#8-首行缩进" class="headerlink" title="8.首行缩进"></a>8.首行缩进</h6><p>text-indent：可以负值； 但是只对第一行起作用。</p>
+<h6 id="9-字间距"><a href="#9-字间距" class="headerlink" title="9.字间距"></a>9.字间距</h6><p>letter-spacing：控制文字间距离</p>
+<p>word-spacling：英文字符的间距（单词）</p>
+<h6 id="10-文本修饰"><a href="#10-文本修饰" class="headerlink" title="10.文本修饰"></a>10.文本修饰</h6><p>text-decoration：none（没有）</p>
+<p>text-decoration：underline（下划线）</p>
+<p>text-decoration：overline（上划线）</p>
+<p>text-decoration：line-through（删除线）</p>
+<p>综合声明：text-decoration： line-through underline  overline;</p>
+<h6 id="11-综合声明"><a href="#11-综合声明" class="headerlink" title="11.综合声明"></a>11.综合声明</h6><p>font是font-style  font-weight font-size&#x2F;line-height  font-famliy的简写</p>
+<p>font：italic（斜体） 800（加粗） 30px（大小）&#x2F;80px（行高） “宋体”（字体） ;  顺序不能改变，必须同时指定font-size和font-family属性才能起作用，字体，行高，大小不能省略。</p>
+<p> <a href="D:\DW文件\练习2\css\文本属性.html">文本属性.html</a> </p>
+<p> <a href="D:\DW文件\练习2\css\案例2.html">案例2.html</a> </p>
+<h6 id="12-检索大小写"><a href="#12-检索大小写" class="headerlink" title="12.检索大小写"></a>12.检索大小写</h6><p>text-transform：capitaliaze；（单词首字母大写） </p>
+<p>text-transform： lowercase；（所有单词都是小写） </p>
+<p>text-transform：uppercase；（所有单词大写）</p>
+<h5 id="2-列表属性"><a href="#2-列表属性" class="headerlink" title="2.列表属性"></a>2.列表属性</h5><h6 id="1-定义列表符合样式"><a href="#1-定义列表符合样式" class="headerlink" title="1.定义列表符合样式"></a>1.定义列表符合样式</h6><p>list-style-type：disc；（实心圆）</p>
+<p>list-style-type： circle；（空心圆） </p>
+<p>list-style-type：square；（实心方块）</p>
+<p>list-style-type： none；（去掉符号）</p>
+<h6 id="2-将图片设置为列表符合样式"><a href="#2-将图片设置为列表符合样式" class="headerlink" title="2.将图片设置为列表符合样式"></a>2.将图片设置为列表符合样式</h6><p>list-style-image：url（）</p>
+<h6 id="3-设置列表项标记的放置位置"><a href="#3-设置列表项标记的放置位置" class="headerlink" title="3.设置列表项标记的放置位置"></a>3.设置列表项标记的放置位置</h6><p>list-style-position：outside；（列表在外面，默认值）</p>
+<p>list-style-position：inside； （列表的里面）</p>
+<h6 id="4-简写"><a href="#4-简写" class="headerlink" title="4.简写"></a>4.简写</h6><p>list-style：none；（去除列表符号）</p>
+<h5 id="3-背景属性"><a href="#3-背景属性" class="headerlink" title="3.背景属性"></a>3.背景属性</h5><h6 id="1-背景颜色"><a href="#1-背景颜色" class="headerlink" title="1.背景颜色"></a>1.背景颜色</h6><p>backgrou-color：</p>
+<h6 id="2-背景图片"><a href="#2-背景图片" class="headerlink" title="2.背景图片"></a>2.背景图片</h6><p>backgrou-image：</p>
+<h6 id="3-背景图片平铺"><a href="#3-背景图片平铺" class="headerlink" title="3.背景图片平铺"></a>3.背景图片平铺</h6><p>backgrou-repeat：no-repeat（不平铺）</p>
+<p>backgrou-repeat：repeat（平铺）</p>
+<p>backgrou-repeat：repeat-x（x轴平铺）</p>
+<p>backgrou-repeat：repeat-y（y轴平铺）</p>
+<h6 id="4-背景图片位置"><a href="#4-背景图片位置" class="headerlink" title="4.背景图片位置"></a>4.背景图片位置</h6><p>backgrou-position：水平位置  垂直位置；可以给负值</p>
+<p>1.backgrou-position：20px 20px</p>
+<p><img src="C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20211128153745471.png" alt="image-20211128153745471"></p>
+<p>2.backgrou-position：10% 10%（宽度百分之十 高度百分之十）</p>
+<p><img src="C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20211128153857122.png" alt="image-20211128153857122"></p>
+<p>3.left center  right</p>
+<p>top center bottom</p>
+<p>backgrou-position：center center；</p>
+<h6 id="5-背景图片固定"><a href="#5-背景图片固定" class="headerlink" title="5.背景图片固定"></a>5.背景图片固定</h6><p>backgrou-attachment：scroll（滚动）</p>
+<p>backgrou-attachment：fixed（固定，固定在浏览器窗口里面，固定之后就相当于浏览器窗口了）</p>
+<h6 id="6-背景图片大小"><a href="#6-背景图片大小" class="headerlink" title="6.背景图片大小"></a>6.背景图片大小</h6><p>background-size：可以直接设置图片大小，</p>
+<p>1.400px 400px</p>
+<p>2.100% 100%</p>
+<p>3.cover（等比例放大，把背景图像扩展至足够大，以使背景图像完全覆盖背景区域，也许无法显示在背景定位区域中）</p>
+<p>4.contain（把图像扩展至最大尺寸，以使其宽度高度完全适应内容区域。铺不满盒子）</p>
+<p><img src="C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20211128154521792.png" alt="image-20211128154521792"></p>
+<h6 id="7-复合属性"><a href="#7-复合属性" class="headerlink" title="7.复合属性"></a>7.复合属性</h6><p>1.用空格隔开</p>
+<p>2.顺序可以换</p>
+<p>3.可以取一个值，覆盖前面的值</p>
+<p>4.background-size只能单独使用</p>
+<p>5.前面没有用复合属性的属性，要是使用的复合属性，但是复合属性没有写之前不是复合属性的属性，那网页就不会有这个属性。</p>
+<h5 id="4-浮动属性"><a href="#4-浮动属性" class="headerlink" title="4.浮动属性"></a>4.浮动属性</h5><h6 id="1-作用"><a href="#1-作用" class="headerlink" title="1.作用"></a>1.作用</h6><p>1.定义网页中其他恩本如何环绕改元素显示；</p>
+<p>2.让竖着的东西横着来</p>
+<p>3.浮动时，文字是挡不住的</p>
+<h6 id="2-左浮动"><a href="#2-左浮动" class="headerlink" title="2.左浮动"></a>2.左浮动</h6><p>float：left</p>
+<h6 id="3-右浮动"><a href="#3-右浮动" class="headerlink" title="3.右浮动"></a>3.右浮动</h6><p>float：right</p>
+<h6 id="4-不浮动"><a href="#4-不浮动" class="headerlink" title="4.不浮动"></a>4.不浮动</h6><p>float：none</p>
+<p> <a href="D:\DW文件\练习1（vs）\css\浮动.html">浮动.html</a> </p>
+<h6 id="5-浮动属性（clear）"><a href="#5-浮动属性（clear）" class="headerlink" title="5.浮动属性（clear）"></a>5.浮动属性（clear）</h6><p>清除浮动只是改变元素的排列方式，该元素还是漂浮着，不占据文档位置</p>
+<p>1.允许浮动对象</p>
+<p>clear：none；</p>
+<p>2.不允许右边有浮动对象</p>
+<p>clear：right；</p>
+<p>3.不允许左边有浮动对象</p>
+<p>clear：left；</p>
+<p>4.不允许有浮动对象</p>
+<p>clear：both；</p>
+<h6 id="6-高度塌陷解决办法"><a href="#6-高度塌陷解决办法" class="headerlink" title="6.高度塌陷解决办法"></a>6.高度塌陷解决办法</h6><p>  1.写固定高度</p>
+<p>  2.清除浮动（在下面的div设置清除浮动clear：none）</p>
+<p>  3.当前浮动元素后面补一个盒子，不设置宽高，并且给该元素添加声明：clear：both；height：0；overflow：hidden；（缺点：在结构中增加了空的标签，不利于代码可读性，且降低了浏览器的性能）</p>
+<p>  4.在父盒子加overflow：hidden(通过bfc让浮动元素计算高度) </p>
+<p>5.<strong>万能清浮动方法</strong></p>
+<p>1.选择符：after{content：“ ”；clear：both；display：block；height：0；visibility：hidden；、overflow：hidden；}</p>
+<p>2.设置一个伪类元素（:after），并且给centent设置一个空标签，然后设计centent：“ ”； </p>
+<p>clear：both；</p>
+<p>display：block；</p>
+<p>width：0；</p>
+<p>height：0；</p>
+<p>&#x2F;<em>display：none；不占位隐藏</em>&#x2F;</p>
+<p>visibility：hidden；&#x2F;<em>占位隐藏</em>&#x2F;</p>
+<h6 id="7-浮动与定位的差别"><a href="#7-浮动与定位的差别" class="headerlink" title="7.浮动与定位的差别"></a>7.浮动与定位的差别</h6><p>1.float:半脱离，文字化绕 </p>
+<p> 2.absolute：全脱离，不会出现文字环绕效果</p>
+<h5 id="5-空白元素属性-剩余空间属性"><a href="#5-空白元素属性-剩余空间属性" class="headerlink" title="5.空白元素属性(剩余空间属性)"></a>5.空白元素属性(剩余空间属性)</h5><h6 id="1-不换行："><a href="#1-不换行：" class="headerlink" title="1.不换行："></a>1.不换行：</h6><p>1.white-space:pre;(空白会被浏览器保留。其行为类似html中的<pre>标签)（显示空格，回车，）</p>
+<pre></pre>预格式化文本-保留空格，tab，回车![image-20211201152339406](C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20211201152339406.png)
+
+<p>2.white-space:nowrap;（文本不会换行，文本会在同一行上继续，知道遇上<br/>标签之后。）</p>
+<p>1.white-space:normal;（默认。空白会被浏览器忽略）</p>
+<p>2.white-space:pre-wrap;（保留空白符序列，但是正常地进行换行）(显示空格，回车，换行)</p>
+<p>3.white-space:pre-line;（合并空白符序列，但是保留换行符）（显示回车，不显示空格，换行）</p>
+<p>4.white-space:inherit;（规定应该从父元素继承white-sapce属性的值）</p>
+<h6 id="1-不显示"><a href="#1-不显示" class="headerlink" title="1.不显示"></a>1.不显示</h6><p>text-overflow：clip；（默认值，当前对象内文本溢出时不显示省略号标记，直接将溢出部分进行裁剪。）</p>
+<h6 id="2-显示"><a href="#2-显示" class="headerlink" title="2.显示"></a>2.显示</h6><p>text-overflow：ellipsis；（当对象内文本溢出显示省略标记）</p>
+<h6 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h6><p>1.上面两种使用方法都必须配合两种属性来配合使用，分别是overflow：hidden和white-space：nowrap；</p>
+<p>2.以上都是只有一行显示省略号，如果需要在第多行来显示省略号则需要将white-sapce属性去除，并且加上：</p>
+<p>display：-webkit-box；/<em>将对象作为弹性盒子模型显示</em>/</p>
+<p>-webkit-line-clamp：3  /<em>第几行裁剪</em>/</p>
+<p>-webkit-box-orient：vertical；/<em>设置或检索伸缩盒对象的子元素排列方式</em>/</p>
+<h5 id="7-盒子模型属性"><a href="#7-盒子模型属性" class="headerlink" title="7.盒子模型属性"></a>7.盒子模型属性</h5><h6 id="1-内边距"><a href="#1-内边距" class="headerlink" title="1.内边距"></a>1.内边距</h6><p>padding：px和%。</p>
+<p>1.一个值时四个方向的值都一样</p>
+<p>2.2个值就是上下，左右</p>
+<p>3.三个值上，左右，下</p>
+<p>4.四个值上，右，下，左</p>
+<p>5.背景色蔓延到内边距嘛？</p>
+<p>6.padding-方向：top bottom left right</p>
+<p>7.<ul><li>的值padding的左边距有40px，可以通过padding-left：0；来清零</p>
+<p>8.不支持负数</p>
+<h6 id="2-边框"><a href="#2-边框" class="headerlink" title="2.边框"></a>2.边框</h6><p>1.线的类型：solid（实线），double（双实线），dashed（虚线），dotted（点状线）</p>
+<p>2.border-方向：top bottom left right</p>
+<p>3.border-width：边框的宽度</p>
+<p>4.border-style：边框的样式</p>
+<p>5.border-color：边框的颜色</p>
+<h6 id="3-外边距"><a href="#3-外边距" class="headerlink" title="3.外边距"></a>3.外边距</h6><p>margin：px和%</p>
+<p>1.一个值时四个方向的值都一样</p>
+<p>2.2个值就是上下，左右</p>
+<p>3.三个值上，左右，下</p>
+<p>4.四个值上，右，下，左</p>
+<p>5.背景色蔓延到内边距嘛？ 不蔓延</p>
+<p>6.margin-方向：top bottom left right</p>
+<p>7.<ul><li>的值padding的左边距有40px，可以通过margin-left：0；来清零</p>
+<p>8.支持负数(往反方向走)</p>
+<p>9.盒子居中方法：margin：0 auto；（横向居中方案）</p>
+<p>10.要是两个盒子是兄弟盒子时</p>
+<p>垂直方向时，两盒子的外边距取得是最大值（列如： .box1{background: rebeccapurple;margin-bottom: 100px; } .box2{ margin-top: 50px; background: yellowgreen;}</p>
+<p>此时盒子一盒子二的外边距为100px。</p>
+<p>水平方向时，两盒子的外边距会进行合并处理</p>
+<p> .box3{float: left;background: teal;margin-right: 100px;}</p>
+<p>.box4{float: left;background: tomato;margin-left: 50px;}</p>
+<p>此时盒子三四的外边距为150px</p>
+<p>11.当盒子与盒子是父子属性时</p>
+<p>1.子盒子的margin可以用父盒子的padding来实现，但是需要注意父盒子高度的计算变化</p>
+<p>2.也可以通过给父盒子设置边框来实现子盒子外边距的调整（border：1px solid transparent（透明的））</p>
+<p>3.加浮动</p>
+<p>4.在父盒子加overflow：hidden；         bfc</p>
+<p> <a href="D:\DW文件\练习1（vs）\css\盒子模型.html">盒子模型.html</a> </p>
+<p> <a href="D:\DW文件\练习1（vs）\css\盒子模型案例.html">盒子模型案例.html</a> </p>
+<h5 id="8-溢出属性："><a href="#8-溢出属性：" class="headerlink" title="8.溢出属性："></a>8.溢出属性：</h5><h6 id="1-默认值"><a href="#1-默认值" class="headerlink" title="1.默认值"></a>1.默认值</h6><p>overflow：visible；默认值，溢出内容会显示在元素之外；</p>
+<h6 id="2-隐藏"><a href="#2-隐藏" class="headerlink" title="2.隐藏"></a>2.隐藏</h6><p>overflow：hidden；溢出内容隐藏</p>
+<h6 id="3-滚动"><a href="#3-滚动" class="headerlink" title="3.滚动"></a>3.滚动</h6><p>overflow：srcoll；溢出内容以滚动方式显示</p>
+<h6 id="4-看情况显示滚动条"><a href="#4-看情况显示滚动条" class="headerlink" title="4.看情况显示滚动条"></a>4.看情况显示滚动条</h6><p>overflow：auto；如果有溢出会添加滚动条，没有溢出正常显示</p>
+<h6 id="5-从父元素继承相关值"><a href="#5-从父元素继承相关值" class="headerlink" title="5.从父元素继承相关值"></a>5.从父元素继承相关值</h6><p>overflow：inherit；规定应该遵从父元素继承overflow属性的值</p>
+<h6 id="6-x轴溢出"><a href="#6-x轴溢出" class="headerlink" title="6.x轴溢出"></a>6.x轴溢出</h6><p>overflow-x：auto；</p>
+<p>overflow-y:hidden</p>
+<h6 id="7-y轴溢出"><a href="#7-y轴溢出" class="headerlink" title="7.y轴溢出"></a>7.y轴溢出</h6><p>overflow-y:auto;</p>
+<p>overflow-x:hidden</p>
+<p> <a href="D:\DW文件\练习1（vs）\css\溢出.html">溢出.html</a> </p>
+<h5 id="9-定位"><a href="#9-定位" class="headerlink" title="9.定位"></a>9.定位</h5><h6 id="1-默认值-1"><a href="#1-默认值-1" class="headerlink" title="1.默认值"></a>1.默认值</h6><p>position：static：默认定位</p>
+<h6 id="2-绝对定位"><a href="#2-绝对定位" class="headerlink" title="2.绝对定位"></a>2.绝对定位</h6><p>position：absolute；绝对定位，能够脱离文档流。</p>
+<p>1.当没有父元素或者父元素没有定位，参照物就是浏览器窗口的第一屏</p>
+<p>2.有父元素且父元素有定位，相对于父元素定位</p>
+<p>3.不会占着盒子本来的位置</p>
+<h6 id="3-相对定位"><a href="#3-相对定位" class="headerlink" title="3.相对定位"></a>3.相对定位</h6><p>position：relative；不脱离文档流位置，自己的初始位置，相对自己最初的定位来定位。对占着盒子本来的定位</p>
+<h6 id="4-固定定位"><a href="#4-固定定位" class="headerlink" title="4.固定定位"></a>4.固定定位</h6><p>position：fixed；脱离文档流位置，浏览器的当前窗口</p>
+<h6 id="5-粘性定位"><a href="#5-粘性定位" class="headerlink" title="5.粘性定位"></a>5.粘性定位</h6><p>position：sticky；可以做吸顶效果，粘性定位是css3.0新增加的，兼容不好</p>
+<h6 id="6-层叠顺序（z-index）"><a href="#6-层叠顺序（z-index）" class="headerlink" title="6.层叠顺序（z-index）"></a>6.层叠顺序（z-index）</h6><p>z-index属性是不带单位的，并且可以给复负值，没有设置z-index时，最后写的对象优先显示在上层，设置后，数值越大，层越靠上</p>
+<p>父子盒子要是想要实现父盒子在上面子盒子在下面的话，可以使用在子盒子设置一个负值。</p>
+<p> <a href="D:\DW文件\练习1（vs）\css\定位.html">定位.html</a>  <a href="D:\DW文件\练习1（vs）\css\定位的下拉菜单.html">定位的下拉菜单.html</a> </p>
+<h5 id="10-锚点"><a href="#10-锚点" class="headerlink" title="10.锚点"></a>10.锚点</h5><h6 id="1-作用-1"><a href="#1-作用-1" class="headerlink" title="1.作用"></a>1.作用</h6><p>可是实现直接跳转搭配相关的界面（盒子）</p>
+<h6 id="2-使用方法"><a href="#2-使用方法" class="headerlink" title="2.使用方法"></a>2.使用方法</h6><p>通过设置锚点的位置来使用</p>
+<p>页面不同区域的跳转，可以使用a链接  </p>
+<p> /<em><a href="#锚点名字"></a></em>/</p>
+<p>/* <div id="锚点名字"></div>*/</p>
+<h5 id="11-阴影（shadow）"><a href="#11-阴影（shadow）" class="headerlink" title="11.阴影（shadow）"></a>11.阴影（shadow）</h5><h6 id="1-文字阴影（text-shadow）"><a href="#1-文字阴影（text-shadow）" class="headerlink" title="1.文字阴影（text-shadow）"></a>1.文字阴影（text-shadow）</h6><p>1.第一个数值是水平方向移动10px(正下负上)</p>
+<p>2.第二个数值是垂直方向移动10px(正左负右)</p>
+<p>3.第三个数值是模糊程度</p>
+<p>4.第四个数是模糊颜色</p>
+<p>5.如果需要两个模糊半径，只需要在第一个属性下加上逗号，然后在逗号后面添加数值即可（text-shadow: 0px 10px 1px paleturquoise,0px -10px 1px palevioletred;）</p>
+<h6 id="2-盒子阴影（box-shadow）"><a href="#2-盒子阴影（box-shadow）" class="headerlink" title="2.盒子阴影（box-shadow）"></a>2.盒子阴影（box-shadow）</h6><p>1.h-shadow：必须值。水平阴影的位置。允许复负值</p>
+<p>2.v-shadow：必须值。垂直阴影的位置。允许复负值</p>
+<p>3.blur：可选值。模糊距离</p>
+<p>4.spread：可选值。阴影大小</p>
+<p>5.color：可选值。阴影颜色</p>
+<p>6.inset：可选值。从外层的阴影（开始时）改变阴影内测阴影</p>
+<p>（box-shadow：10px 10px 5px red inset；）</p>
+<h5 id="12-圆角边框"><a href="#12-圆角边框" class="headerlink" title="12.圆角边框"></a>12.圆角边框</h5><h6 id="1-单位"><a href="#1-单位" class="headerlink" title="1.单位"></a>1.单位</h6><p>包括px和百分比</p>
+<h6 id="2-方向"><a href="#2-方向" class="headerlink" title="2.方向"></a>2.方向</h6><p>v1：四个角都是一样的</p>
+<p>v1,v2:左上右下，左下右上</p>
+<p>v1,v2,v3：左上，左下右上，右下</p>
+<p>v1,v2,v3,v4：顺时针方向定位</p>
+<h6 id="3-写法（单个方向写法）"><a href="#3-写法（单个方向写法）" class="headerlink" title="3.写法（单个方向写法）"></a>3.写法（单个方向写法）</h6><p>1.左上：border-top-left-radius: 100px;</p>
+<p>2.右上：border-top-right-radius: 80px;</p>
+<p>3.左下border-bottom-left-radius: 50px;</p>
+<p>4.右下border-bottom-right-radius: 10px;</p>
+<p>5.border-radius: 30px/60px；：这里的意思是水平方向缩进30px，竖直方向缩进60px，四个方向都是这个数值</p>
+<p>6.border-radius: 10px 20px 30px 40px/50px 60px 70px 80px；：此方法是定义四个不同角的大小</p>
+<p>7.圆形：border-radius: 50%; 或者写盒子的一半（此处意思是盒子的大小加上padding和margin的大小）</p>
+<p>8.半圆：border-radius: 50px 50px 0 0;注意，必须选择宽度是长度的一半的才行。</p>
+<p>9.扇形：border-radius: 100px 0 0 0;保证其他几个位置的值为零就可以构建出一个扇形</p>
+<p>10.在长方形中，最好使用px值，如果使用百分比的话，会造成边框的值奇怪</p>
+<h5 id="13-字体引入（-font-face）"><a href="#13-字体引入（-font-face）" class="headerlink" title="13.字体引入（@font-face）"></a>13.字体引入（@font-face）</h5><h6 id="1-定义"><a href="#1-定义" class="headerlink" title="1.定义"></a>1.定义</h6><p>@font-face是将自己定义的web字体嵌入到网页中，随着@font-face模板的出现，我们在web的开发中使用的字体不怕只能使用web安全字体</p>
+<h6 id="2-语法规则"><a href="#2-语法规则" class="headerlink" title="2.语法规则"></a>2.语法规则</h6><p>@font-face{</p>
+<p> font-family:<YourWebFontName>;</p>
+<p>src:<source>[<format>][][]</p>
+<p>[font-weight:<weight>];</p>
+<p>[font-style:<style>]</p>
+<p>}</p>
+<h6 id="3-语法说明"><a href="#3-语法说明" class="headerlink" title="3.语法说明"></a>3.语法说明</h6><p>1.YourWebFontName：此值指的是你定义的字体名称，最好使用下载的字体，它将引用到web元素中的font-family。如font-family:<YourWebFontName>;</p>
+<p>2.source：此值是自定义的字体的存放途径，可以是相对路径也可以是绝对路径</p>
+<h5 id="14-怪异盒模型box-sizing-border-box"><a href="#14-怪异盒模型box-sizing-border-box" class="headerlink" title="14.怪异盒模型box-sizing: border-box;"></a>14.怪异盒模型box-sizing: border-box;</h5><p>1.保证盒子的大小永远都是我们定义的大小</p>
+<h5 id="15-弹性盒模型"><a href="#15-弹性盒模型" class="headerlink" title="15.弹性盒模型"></a>15.弹性盒模型</h5><h6 id="1-影响"><a href="#1-影响" class="headerlink" title="1.影响"></a>1.影响</h6><p>1.影响子元素默认横向排列</p>
+<p>2.行内元素会变成块级元素</p>
+<p>3.在父盒子加了display：flex之后，在子盒子设置margin：auto；就能实现子盒子在父盒子中居中显示（前提是子盒子只能有一个盒子的前提下）</p>
+<p>2.flex-direction:row(水平)，column（竖直），row-reverse（row方向的反向排列），column-reverse（column方向的反向排列）</p>
+<p>3.每一个盒子都能作为弹性盒子使用，要想在一个盒子中将里面的内容实现居中，可以将盒子设置为 display: flex;，再将盒子中的图片设置为margin: 0 auto;</p>
+<h6 id="2-调整主轴对其方式"><a href="#2-调整主轴对其方式" class="headerlink" title="2.调整主轴对其方式"></a>2.调整主轴对其方式</h6><p>1.justify-content: flex-start;从主轴开始（左边）</p>
+<p>2.justify-content: flex-end;从主轴结束（右边）</p>
+<p>3.justify-content: center;从中间开始</p>
+<p>4.justify-content: space-between;两端对齐方式</p>
+<p>5.justify-content: space-around;距离环绕方式，就是相当于左右外边距，自身左右两边距离是一样的</p>
+<h6 id="3-调整侧轴对齐方向"><a href="#3-调整侧轴对齐方向" class="headerlink" title="3.调整侧轴对齐方向"></a>3.调整侧轴对齐方向</h6><p>1.align-items: flex-start;位于盒子的最上面</p>
+<p>2.align-items: flex-end;位于盒子的最下面</p>
+<p>3.align-items: center;位于盒子中间</p>
+<p>4.侧轴对齐方向没有两端对齐</p>
+<h6 id="4-折行"><a href="#4-折行" class="headerlink" title="4.折行"></a>4.折行</h6><p>1.flex-wrap: wrap；折行</p>
+<h6 id="5-控制折行后的行间距"><a href="#5-控制折行后的行间距" class="headerlink" title="5.控制折行后的行间距"></a>5.控制折行后的行间距</h6><p>1.align-content: flex-start; 在左上角紧密相连</p>
+<p>2.align-content: flex-end;在左下角紧密相连</p>
+<p>3.align-content: center;在中间紧密相连</p>
+<p>4.align-content: space-around;等距离环绕</p>
+<p>5.align-content: space-between;两端对齐</p>
+<h6 id="6-压缩（可以实现水平方向的滚动）"><a href="#6-压缩（可以实现水平方向的滚动）" class="headerlink" title="6.压缩（可以实现水平方向的滚动）"></a>6.压缩（可以实现水平方向的滚动）</h6><p>flex-shrink配合overflow：auto使用；能实现在一行内不压缩显示，并且出现没有滚动条进行滚动</p>
+<p> <a href="D:\DW文件\练习1（vs）\css3\弹性盒.html">弹性盒.html</a> </p>
+<p> <a href="D:\DW文件\练习1（vs）\css3\弹性盒案例.html">弹性盒案例.html</a> </p>
+<h5 id="16-项目"><a href="#16-项目" class="headerlink" title="16.项目"></a>16.项目</h5><h6 id="1-定义-1"><a href="#1-定义-1" class="headerlink" title="1.定义"></a>1.定义</h6><p>每个盒子都是不同的一个项目，外面的大盒子时容器，小盒子是项目</p>
+<h6 id="2-方式"><a href="#2-方式" class="headerlink" title="2.方式"></a>2.方式</h6><p>相对于自己排列，主轴方向换了也类似</p>
+<p>1.align-self: flex-start;默认值</p>
+<p>2.align-self: flex-end;在页面地下对齐</p>
+<p>3.align-self: center;在页面中间对齐</p>
+<p>4.align-self: baseline;样式与flex-start相似</p>
+<p>5.align-self: stretch;拉伸，让盒子完全撑满整个高度，要是纵轴排列的话，设置了高度，但是没设置宽度，则默认沾满整个盒子，横轴反之。</p>
+ <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: flex;
+​        }
+​        .box div{
+​            width: 100px;
+​            /* height: 100px; */
+​            border: 1px dashed red;
+​            box-sizing: border-box;
+​        }
+​        .div1{
+​            height: 100px;
+​            align-self: flex-start;
+​        }
+​        .div2{
+​            height: 100px;
+​            align-self: flex-end;
+​        }
+​        .div3{
+​            height: 100px;
+​            align-self: center;
+​        }
+​        .div4{
+​            height: 100px;
+​            align-self: baseline;
+​            /* 跟flex-start样式一样 */
+​        }
+​        .div5{
+​            align-self: stretch;
+​            /* 拉伸， 让盒子完全撑满整个高度 有高度时不生效*/
+​        }
+​    </style>
+</head>
+<body>
+
+<pre><code>&lt;div class=&quot;box&quot;&gt;
+    &lt;div class=&quot;div1&quot;&gt;11111&lt;/div&gt;
+    &lt;div class=&quot;div2&quot;&gt;22222&lt;/div&gt;
+    &lt;div class=&quot;div3&quot;&gt;33333&lt;/div&gt;
+    &lt;div class=&quot;div4&quot;&gt;44444&lt;/div&gt;
+    &lt;div class=&quot;div5&quot;&gt;55555&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</body>
+</html>
+
+<h5 id="17-文字图形"><a href="#17-文字图形" class="headerlink" title="17.文字图形"></a>17.文字图形</h5><h6 id="1-工具"><a href="#1-工具" class="headerlink" title="1.工具"></a>1.工具</h6><p>阿里巴巴矢量图标库，先将东西放到购物车，然后再在购物车直接添加加到项目，再把项目统一下载到本地，下载好了之后会有一个文档，打开那个文档就能看到一个使用说明</p>
+<h6 id="2-使用方法-1"><a href="#2-使用方法-1" class="headerlink" title="2.使用方法"></a>2.使用方法</h6><p>1.Unicode</p>
+<p>第一步：拷贝项目下面生成的 <code>@font-face</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&#x27;iconfont&#x27;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;iconfont.woff2?t=1639554101135&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>),</span><br><span class="line">       <span class="built_in">url</span>(<span class="string">&#x27;iconfont.woff?t=1639554101135&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff&#x27;</span>),</span><br><span class="line">       <span class="built_in">url</span>(<span class="string">&#x27;iconfont.ttf?t=1639554101135&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;truetype&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第二步：定义使用 iconfont 的样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.iconfont</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;iconfont&quot;</span> <span class="meta">!important</span>;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">font-style</span>: normal;</span><br><span class="line">  -webkit-<span class="attribute">font-smoothing</span>: antialiased;</span><br><span class="line">  -moz-osx-<span class="attribute">font-smoothing</span>: grayscale;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第三步：挑选相应图标并获取字体编码，应用于页面</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont&quot;</span>&gt;</span><span class="symbol">&amp;#x33;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2.Font class（建议使用这种）</p>
+<p>第一步：引入项目下面生成的 fontclass 代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;./iconfont.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>第二步：挑选相应图标并获取类名，应用于页面：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;iconfont icon-xxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>3.Symbol</p>
+<p>第一步：引入项目下面生成的 symbol 代码：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;./iconfont.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>第二步：加入通用 CSS 代码（引入一次就行）：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css"><span class="selector-class">.icon</span> &#123;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">width</span>: <span class="number">1em</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">height</span>: <span class="number">1em</span>;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">vertical-align</span>: -<span class="number">0.15em</span>;</span></span><br><span class="line"><span class="language-css">  fill: currentColor;</span></span><br><span class="line"><span class="language-css">  <span class="attribute">overflow</span>: hidden;</span></span><br><span class="line"><span class="language-css">&#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>第三步：挑选相应图标并获取类名，应用于页面：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">svg</span> <span class="attr">class</span>=<span class="string">&quot;icon&quot;</span> <span class="attr">aria-hidden</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">use</span> <span class="attr">xlink:href</span>=<span class="string">&quot;#icon-xxx&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">use</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h6 id="3-属性"><a href="#3-属性" class="headerlink" title="3.属性"></a>3.属性</h6><p>他的属性跟文字的属性是一样的</p>
+<h5 id="18-多列布局属性"><a href="#18-多列布局属性" class="headerlink" title="18.多列布局属性"></a>18.多列布局属性</h5><h6 id="1-分割列数"><a href="#1-分割列数" class="headerlink" title="1.分割列数"></a>1.分割列数</h6><p>column-count：适用于除table外的非替换块级元素，table，cells，inline-block元素</p>
+<h6 id="2-间隔大小"><a href="#2-间隔大小" class="headerlink" title="2.间隔大小"></a>2.间隔大小</h6><p>column-gap：规定列之间的间隔大小</p>
+<h6 id="3-设置或检索对象的列与列之间的边框，复合属性"><a href="#3-设置或检索对象的列与列之间的边框，复合属性" class="headerlink" title="3.设置或检索对象的列与列之间的边框，复合属性"></a>3.设置或检索对象的列与列之间的边框，复合属性</h6><p>column-rule-color：规定列与列之间的颜色</p>
+<p>column-rule-style：规定列与列之间的样式</p>
+<p>column-rule-width：规定列与列之间的宽度</p>
+<h6 id="4-设置检索对象所有列的高度是否统一"><a href="#4-设置检索对象所有列的高度是否统一" class="headerlink" title="4.设置检索对象所有列的高度是否统一"></a>4.设置检索对象所有列的高度是否统一</h6><p>column-fill：auto；列高度自适应内容</p>
+<p>column-fill：balance；所有列的高度以其中最高的统一</p>
+<h6 id="5-设置或检索对象元素是否横跨所有列"><a href="#5-设置或检索对象元素是否横跨所有列" class="headerlink" title="5.设置或检索对象元素是否横跨所有列"></a>5.设置或检索对象元素是否横跨所有列</h6><p>column-span：none；不跨列</p>
+<p>column-span：all；横跨所有列</p>
+<h6 id="6-设置或检索对象每列的宽度"><a href="#6-设置或检索对象每列的宽度" class="headerlink" title="6.设置或检索对象每列的宽度"></a>6.设置或检索对象每列的宽度</h6><p>column-width</p>
+<h6 id="7-折行"><a href="#7-折行" class="headerlink" title="7.折行"></a>7.折行</h6><p>禁止盒子内部折行 </p>
+<p>break-inside: avoid;</p>
+<h5 id="19-响应式布局"><a href="#19-响应式布局" class="headerlink" title="19.响应式布局"></a>19.响应式布局</h5><h6 id="1-常用布局方案"><a href="#1-常用布局方案" class="headerlink" title="1.常用布局方案"></a>1.常用布局方案</h6><p>1.固定布局：只设计一套尺寸</p>
+<p>2.可切换的固定尺寸：以像素作为页面单位，参考主流设备尺寸，设计几套不同宽度的布局，通过识别的屏幕尺寸或浏览器宽度，选择最合适的宽度布局</p>
+<p>3.弹性布局：以百分比为单位，可以适应一定范围的所有尺寸的设备屏幕及浏览器宽度</p>
+<p>4.混合布局：与弹性布局类似，只是混合像素和百分比作为页面单位</p>
+<p>5.布局相应：对页面进行响应式的设计实现，需要对相同内容进行不同宽度的布局设计，有两种方式：pc优先（从pc端开始向下设计）移动优先（从移动端向上设计），无论基于那种模式的设计，要兼容所有设备，布局响应时不可避免的需要对模块布局做一些变化（发生布局改变额临界点称为断点）</p>
+<h6 id="2-怎么实现"><a href="#2-怎么实现" class="headerlink" title="2.怎么实现"></a>2.怎么实现</h6><p>1.模块中的内容：挤压-拉（布局不变）</p>
+<p>2.模块中的内容：换行-平铺（布局不变）</p>
+<p>3.模块中的内容：删减-增加（布局不变）</p>
+<p>4.模块位置变换（布局改变）</p>
+<p>5.模块展示方式改变：隐藏-展开（布局改变）</p>
+<h6 id="3-特点"><a href="#3-特点" class="headerlink" title="3.特点"></a>3.特点</h6><p>设计特点：灵活性强，兼容性强</p>
+<p>缺点：兼容设备工作量大，效率低下；代码累赘，会出现隐藏无用元素，加载时间长；很难达到最佳效果；会改变原有布局，会出现用户混淆情况</p>
+<h6 id="4-媒体查询"><a href="#4-媒体查询" class="headerlink" title="4.媒体查询"></a>4.媒体查询</h6><p>1.作用：可以根据设备显示器的特性（视口宽度，屏幕比例、设备方向：横向或纵向）为其设定css样式</p>
+<p>2.操作方式：对设备提出询问开始，如果表达式为真，媒体查询中css被应用，如果表达为假，媒体查询的css为假，则被忽略</p>
+<p>3.媒体查询结构</p>
+<p>@media all and （min-width：320px）{</p>
+<p>body（background-color：blue；）</p>
+<p>}</p>
+<p>在所有媒体中，宽度大于或等于320px的样式设置成background-color：blue；属性</p>
+<h6 id="5-设备类型"><a href="#5-设备类型" class="headerlink" title="5.设备类型"></a>5.设备类型</h6><p>all：所有设备</p>
+<p>aural：听觉设备</p>
+<p>braille：点字触觉设备</p>
+<p>handled：便携设备</p>
+<p>print：打印预览图</p>
+<p>projection：投影设备</p>
+<p>screen：显示器，笔记本，移动端设备</p>
+<p>tty：打字机或终端的设备</p>
+<p>tv：电视机</p>
+<p>embossed：盲文打印机</p>
+<p>and被称为关键字，其他关键字还包括not（排除其他设备），only（限定某种设备）</p>
+<h6 id="6-断点概念"><a href="#6-断点概念" class="headerlink" title="6.断点概念"></a>6.断点概念</h6><p>1.pc客户端或大屏幕设备：1028px或更大</p>
+<p>@media only screen and (min-width:1029px){对应样式}</p>
+<p>2.竖屏</p>
+<p>@media screen and（orientation：portrait）and（max-width：720px）{对应样式}</p>
+<p>3.横屏</p>
+<p>@media screen and（orientation：landscape）{对应样式}</p>
+<h5 id="20-单位概念"><a href="#20-单位概念" class="headerlink" title="20.单位概念"></a>20.单位概念</h5><h6 id="1-px单位"><a href="#1-px单位" class="headerlink" title="1.px单位"></a>1.px单位</h6><h6 id="2-em：相对于父元素的字体大小单位（相对单位），假设字体单位16px，那么字体单位就是1em。div-width：10em；（div盒子是十倍的父盒子字体大小）"><a href="#2-em：相对于父元素的字体大小单位（相对单位），假设字体单位16px，那么字体单位就是1em。div-width：10em；（div盒子是十倍的父盒子字体大小）" class="headerlink" title="2.em：相对于父元素的字体大小单位（相对单位），假设字体单位16px，那么字体单位就是1em。div  width：10em；（div盒子是十倍的父盒子字体大小）"></a>2.em：相对于父元素的字体大小单位（相对单位），假设字体单位16px，那么字体单位就是1em。div  width：10em；（div盒子是十倍的父盒子字体大小）</h6><h6 id="3-rem：相对于根元素（html）的字体大小单位（相对单位）-。div-width：10rem；（div盒子是十倍的根元素字体大小）"><a href="#3-rem：相对于根元素（html）的字体大小单位（相对单位）-。div-width：10rem；（div盒子是十倍的根元素字体大小）" class="headerlink" title="3.rem：相对于根元素（html）的字体大小单位（相对单位） 。div  width：10rem；（div盒子是十倍的根元素字体大小）"></a>3.rem：相对于根元素（html）的字体大小单位（相对单位） 。div  width：10rem；（div盒子是十倍的根元素字体大小）</h6><h6 id="4-vh：view-height-100vh是视口的高度"><a href="#4-vh：view-height-100vh是视口的高度" class="headerlink" title="4.vh：view-height   100vh是视口的高度"></a>4.vh：view-height   100vh是视口的高度</h6><h6 id="5-vw：view-width-100vw是视口的宽度"><a href="#5-vw：view-width-100vw是视口的宽度" class="headerlink" title="5.vw：view-width    100vw是视口的宽度"></a>5.vw：view-width    100vw是视口的宽度</h6><h6 id="6-vw的算法"><a href="#6-vw的算法" class="headerlink" title="6.vw的算法"></a>6.vw的算法</h6><p>​      1.查看目前所在的面板是属于那个面板，例如是iphone4（大小为320px），那么此时的vw就是320px  == 100vw</p>
+<p>​      2.而此时设计的rem的基础是为16px，所以这题的vw等于16px  ==  5vw（320/16==100/x，算x的值为多少，此时x的值为5）</p>
+<h6 id="7-百分百跟vw的关系"><a href="#7-百分百跟vw的关系" class="headerlink" title="7.百分百跟vw的关系"></a>7.百分百跟vw的关系</h6><p>没有滚动条的时候 100vw=100%</p>
+<p>vw是包含滚动条，窗口大小</p>
+<p>百分之百是不包含滚动条的，刨除了滚动条，剩余空间沾满</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2022-04-17T12:42:16.204Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=150x150&data=http://hiluochun.github.io/022/04/17/%E5%B1%9E%E6%80%A7/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2022-04-17T12:42:16.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/jQurey/" class="archive-article-date">
-  	<time datetime="2022-04-17T12:42:16.179Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2022/04/17/%E5%85%83%E7%B4%A0%E7%B1%BB%E5%9E%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/17/%E6%A0%87%E7%AD%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E5%85%83%E7%B4%A0%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2022-04-17T10:22:06.544Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E5%B1%9E%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2022-04-17T10:22:06.528Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">属性</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%96%87%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">1.文本属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%EF%BC%88font-size"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.字体大小（font-size)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F-font-family"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.字体样式(font-family)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E9%A2%9C%E8%89%B2-color"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.颜色(color)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E5%8A%A0%E7%B2%97-font-weight"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.加粗(font-weight)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E5%80%BE%E6%96%9C-font-style"><span class="toc-number">1.1.5.</span> <span class="toc-text">5.倾斜(font-style)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E6%96%87%E6%9C%AC%E6%B0%B4%E5%B9%B3%E5%AF%B9%E9%BD%90-text-align"><span class="toc-number">1.1.6.</span> <span class="toc-text">6.文本水平对齐(text-align)</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E8%A1%8C%E9%AB%98"><span class="toc-number">1.1.7.</span> <span class="toc-text">7.行高</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8-%E9%A6%96%E8%A1%8C%E7%BC%A9%E8%BF%9B"><span class="toc-number">1.1.8.</span> <span class="toc-text">8.首行缩进</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#9-%E5%AD%97%E9%97%B4%E8%B7%9D"><span class="toc-number">1.1.9.</span> <span class="toc-text">9.字间距</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#10-%E6%96%87%E6%9C%AC%E4%BF%AE%E9%A5%B0"><span class="toc-number">1.1.10.</span> <span class="toc-text">10.文本修饰</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#11-%E7%BB%BC%E5%90%88%E5%A3%B0%E6%98%8E"><span class="toc-number">1.1.11.</span> <span class="toc-text">11.综合声明</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#12-%E6%A3%80%E7%B4%A2%E5%A4%A7%E5%B0%8F%E5%86%99"><span class="toc-number">1.1.12.</span> <span class="toc-text">12.检索大小写</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%88%97%E8%A1%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text">2.列表属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%AE%9A%E4%B9%89%E5%88%97%E8%A1%A8%E7%AC%A6%E5%90%88%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.定义列表符合样式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%B0%86%E5%9B%BE%E7%89%87%E8%AE%BE%E7%BD%AE%E4%B8%BA%E5%88%97%E8%A1%A8%E7%AC%A6%E5%90%88%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.将图片设置为列表符合样式</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E8%AE%BE%E7%BD%AE%E5%88%97%E8%A1%A8%E9%A1%B9%E6%A0%87%E8%AE%B0%E7%9A%84%E6%94%BE%E7%BD%AE%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.设置列表项标记的放置位置</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E7%AE%80%E5%86%99"><span class="toc-number">1.2.4.</span> <span class="toc-text">4.简写</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E8%83%8C%E6%99%AF%E5%B1%9E%E6%80%A7"><span class="toc-number">1.3.</span> <span class="toc-text">3.背景属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E8%83%8C%E6%99%AF%E9%A2%9C%E8%89%B2"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.背景颜色</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.背景图片</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%B9%B3%E9%93%BA"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.背景图片平铺</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.3.4.</span> <span class="toc-text">4.背景图片位置</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%9B%BA%E5%AE%9A"><span class="toc-number">1.3.5.</span> <span class="toc-text">5.背景图片固定</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.3.6.</span> <span class="toc-text">6.背景图片大小</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E5%A4%8D%E5%90%88%E5%B1%9E%E6%80%A7"><span class="toc-number">1.3.7.</span> <span class="toc-text">7.复合属性</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E6%B5%AE%E5%8A%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">1.4.</span> <span class="toc-text">4.浮动属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E4%BD%9C%E7%94%A8"><span class="toc-number">1.4.1.</span> <span class="toc-text">1.作用</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%B7%A6%E6%B5%AE%E5%8A%A8"><span class="toc-number">1.4.2.</span> <span class="toc-text">2.左浮动</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%8F%B3%E6%B5%AE%E5%8A%A8"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.右浮动</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E4%B8%8D%E6%B5%AE%E5%8A%A8"><span class="toc-number">1.4.4.</span> <span class="toc-text">4.不浮动</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E6%B5%AE%E5%8A%A8%E5%B1%9E%E6%80%A7%EF%BC%88clear%EF%BC%89"><span class="toc-number">1.4.5.</span> <span class="toc-text">5.浮动属性（clear）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E9%AB%98%E5%BA%A6%E5%A1%8C%E9%99%B7%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95"><span class="toc-number">1.4.6.</span> <span class="toc-text">6.高度塌陷解决办法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E6%B5%AE%E5%8A%A8%E4%B8%8E%E5%AE%9A%E4%BD%8D%E7%9A%84%E5%B7%AE%E5%88%AB"><span class="toc-number">1.4.7.</span> <span class="toc-text">7.浮动与定位的差别</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E7%A9%BA%E7%99%BD%E5%85%83%E7%B4%A0%E5%B1%9E%E6%80%A7-%E5%89%A9%E4%BD%99%E7%A9%BA%E9%97%B4%E5%B1%9E%E6%80%A7"><span class="toc-number">1.5.</span> <span class="toc-text">5.空白元素属性(剩余空间属性)</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E4%B8%8D%E6%8D%A2%E8%A1%8C%EF%BC%9A"><span class="toc-number">1.5.1.</span> <span class="toc-text">1.不换行：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E4%B8%8D%E6%98%BE%E7%A4%BA"><span class="toc-number">1.5.2.</span> <span class="toc-text">1.不显示</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E6%98%BE%E7%A4%BA"><span class="toc-number">1.5.3.</span> <span class="toc-text">2.显示</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%85%B6%E4%BB%96"><span class="toc-number">1.5.4.</span> <span class="toc-text">3.其他</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E5%B1%9E%E6%80%A7"><span class="toc-number">1.6.</span> <span class="toc-text">7.盒子模型属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%86%85%E8%BE%B9%E8%B7%9D"><span class="toc-number">1.6.1.</span> <span class="toc-text">1.内边距</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E8%BE%B9%E6%A1%86"><span class="toc-number">1.6.2.</span> <span class="toc-text">2.边框</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%A4%96%E8%BE%B9%E8%B7%9D"><span class="toc-number">1.6.3.</span> <span class="toc-text">3.外边距</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8-%E6%BA%A2%E5%87%BA%E5%B1%9E%E6%80%A7%EF%BC%9A"><span class="toc-number">1.7.</span> <span class="toc-text">8.溢出属性：</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-number">1.7.1.</span> <span class="toc-text">1.默认值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E9%9A%90%E8%97%8F"><span class="toc-number">1.7.2.</span> <span class="toc-text">2.隐藏</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E6%BB%9A%E5%8A%A8"><span class="toc-number">1.7.3.</span> <span class="toc-text">3.滚动</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E7%9C%8B%E6%83%85%E5%86%B5%E6%98%BE%E7%A4%BA%E6%BB%9A%E5%8A%A8%E6%9D%A1"><span class="toc-number">1.7.4.</span> <span class="toc-text">4.看情况显示滚动条</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E4%BB%8E%E7%88%B6%E5%85%83%E7%B4%A0%E7%BB%A7%E6%89%BF%E7%9B%B8%E5%85%B3%E5%80%BC"><span class="toc-number">1.7.5.</span> <span class="toc-text">5.从父元素继承相关值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-x%E8%BD%B4%E6%BA%A2%E5%87%BA"><span class="toc-number">1.7.6.</span> <span class="toc-text">6.x轴溢出</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-y%E8%BD%B4%E6%BA%A2%E5%87%BA"><span class="toc-number">1.7.7.</span> <span class="toc-text">7.y轴溢出</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#9-%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.8.</span> <span class="toc-text">9.定位</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E9%BB%98%E8%AE%A4%E5%80%BC-1"><span class="toc-number">1.8.1.</span> <span class="toc-text">1.默认值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E7%BB%9D%E5%AF%B9%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.8.2.</span> <span class="toc-text">2.绝对定位</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E7%9B%B8%E5%AF%B9%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.8.3.</span> <span class="toc-text">3.相对定位</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E5%9B%BA%E5%AE%9A%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.8.4.</span> <span class="toc-text">4.固定定位</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E7%B2%98%E6%80%A7%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.8.5.</span> <span class="toc-text">5.粘性定位</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E5%B1%82%E5%8F%A0%E9%A1%BA%E5%BA%8F%EF%BC%88z-index%EF%BC%89"><span class="toc-number">1.8.6.</span> <span class="toc-text">6.层叠顺序（z-index）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#10-%E9%94%9A%E7%82%B9"><span class="toc-number">1.9.</span> <span class="toc-text">10.锚点</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E4%BD%9C%E7%94%A8-1"><span class="toc-number">1.9.1.</span> <span class="toc-text">1.作用</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.9.2.</span> <span class="toc-text">2.使用方法</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#11-%E9%98%B4%E5%BD%B1%EF%BC%88shadow%EF%BC%89"><span class="toc-number">1.10.</span> <span class="toc-text">11.阴影（shadow）</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E6%96%87%E5%AD%97%E9%98%B4%E5%BD%B1%EF%BC%88text-shadow%EF%BC%89"><span class="toc-number">1.10.1.</span> <span class="toc-text">1.文字阴影（text-shadow）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E7%9B%92%E5%AD%90%E9%98%B4%E5%BD%B1%EF%BC%88box-shadow%EF%BC%89"><span class="toc-number">1.10.2.</span> <span class="toc-text">2.盒子阴影（box-shadow）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#12-%E5%9C%86%E8%A7%92%E8%BE%B9%E6%A1%86"><span class="toc-number">1.11.</span> <span class="toc-text">12.圆角边框</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%8D%95%E4%BD%8D"><span class="toc-number">1.11.1.</span> <span class="toc-text">1.单位</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E6%96%B9%E5%90%91"><span class="toc-number">1.11.2.</span> <span class="toc-text">2.方向</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%86%99%E6%B3%95%EF%BC%88%E5%8D%95%E4%B8%AA%E6%96%B9%E5%90%91%E5%86%99%E6%B3%95%EF%BC%89"><span class="toc-number">1.11.3.</span> <span class="toc-text">3.写法（单个方向写法）</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#13-%E5%AD%97%E4%BD%93%E5%BC%95%E5%85%A5%EF%BC%88-font-face%EF%BC%89"><span class="toc-number">1.12.</span> <span class="toc-text">13.字体引入（@font-face）</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%AE%9A%E4%B9%89"><span class="toc-number">1.12.1.</span> <span class="toc-text">1.定义</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99"><span class="toc-number">1.12.2.</span> <span class="toc-text">2.语法规则</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#17-%E6%96%87%E5%AD%97%E5%9B%BE%E5%BD%A2"><span class="toc-number">1.13.</span> <span class="toc-text">17.文字图形</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%B7%A5%E5%85%B7"><span class="toc-number">1.13.1.</span> <span class="toc-text">1.工具</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95-1"><span class="toc-number">1.13.2.</span> <span class="toc-text">2.使用方法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%B1%9E%E6%80%A7"><span class="toc-number">1.13.3.</span> <span class="toc-text">3.属性</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#18-%E5%A4%9A%E5%88%97%E5%B8%83%E5%B1%80%E5%B1%9E%E6%80%A7"><span class="toc-number">1.14.</span> <span class="toc-text">18.多列布局属性</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%88%86%E5%89%B2%E5%88%97%E6%95%B0"><span class="toc-number">1.14.1.</span> <span class="toc-text">1.分割列数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E9%97%B4%E9%9A%94%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.14.2.</span> <span class="toc-text">2.间隔大小</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E8%AE%BE%E7%BD%AE%E6%88%96%E6%A3%80%E7%B4%A2%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%97%E4%B8%8E%E5%88%97%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BE%B9%E6%A1%86%EF%BC%8C%E5%A4%8D%E5%90%88%E5%B1%9E%E6%80%A7"><span class="toc-number">1.14.3.</span> <span class="toc-text">3.设置或检索对象的列与列之间的边框，复合属性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E8%AE%BE%E7%BD%AE%E6%A3%80%E7%B4%A2%E5%AF%B9%E8%B1%A1%E6%89%80%E6%9C%89%E5%88%97%E7%9A%84%E9%AB%98%E5%BA%A6%E6%98%AF%E5%90%A6%E7%BB%9F%E4%B8%80"><span class="toc-number">1.14.4.</span> <span class="toc-text">4.设置检索对象所有列的高度是否统一</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E8%AE%BE%E7%BD%AE%E6%88%96%E6%A3%80%E7%B4%A2%E5%AF%B9%E8%B1%A1%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%A8%AA%E8%B7%A8%E6%89%80%E6%9C%89%E5%88%97"><span class="toc-number">1.14.5.</span> <span class="toc-text">5.设置或检索对象元素是否横跨所有列</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E8%AE%BE%E7%BD%AE%E6%88%96%E6%A3%80%E7%B4%A2%E5%AF%B9%E8%B1%A1%E6%AF%8F%E5%88%97%E7%9A%84%E5%AE%BD%E5%BA%A6"><span class="toc-number">1.14.6.</span> <span class="toc-text">6.设置或检索对象每列的宽度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E6%8A%98%E8%A1%8C"><span class="toc-number">1.14.7.</span> <span class="toc-text">7.折行</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#19-%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80"><span class="toc-number">1.15.</span> <span class="toc-text">19.响应式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%B8%B8%E7%94%A8%E5%B8%83%E5%B1%80%E6%96%B9%E6%A1%88"><span class="toc-number">1.15.1.</span> <span class="toc-text">1.常用布局方案</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E6%80%8E%E4%B9%88%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.15.2.</span> <span class="toc-text">2.怎么实现</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E7%89%B9%E7%82%B9"><span class="toc-number">1.15.3.</span> <span class="toc-text">3.特点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.15.4.</span> <span class="toc-text">4.媒体查询</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E8%AE%BE%E5%A4%87%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.15.5.</span> <span class="toc-text">5.设备类型</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E6%96%AD%E7%82%B9%E6%A6%82%E5%BF%B5"><span class="toc-number">1.15.6.</span> <span class="toc-text">6.断点概念</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#20-%E5%8D%95%E4%BD%8D%E6%A6%82%E5%BF%B5"><span class="toc-number">1.16.</span> <span class="toc-text">20.单位概念</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-px%E5%8D%95%E4%BD%8D"><span class="toc-number">1.16.1.</span> <span class="toc-text">1.px单位</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-em%EF%BC%9A%E7%9B%B8%E5%AF%B9%E4%BA%8E%E7%88%B6%E5%85%83%E7%B4%A0%E7%9A%84%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E5%8D%95%E4%BD%8D%EF%BC%88%E7%9B%B8%E5%AF%B9%E5%8D%95%E4%BD%8D%EF%BC%89%EF%BC%8C%E5%81%87%E8%AE%BE%E5%AD%97%E4%BD%93%E5%8D%95%E4%BD%8D16px%EF%BC%8C%E9%82%A3%E4%B9%88%E5%AD%97%E4%BD%93%E5%8D%95%E4%BD%8D%E5%B0%B1%E6%98%AF1em%E3%80%82div-width%EF%BC%9A10em%EF%BC%9B%EF%BC%88div%E7%9B%92%E5%AD%90%E6%98%AF%E5%8D%81%E5%80%8D%E7%9A%84%E7%88%B6%E7%9B%92%E5%AD%90%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%EF%BC%89"><span class="toc-number">1.16.2.</span> <span class="toc-text">2.em：相对于父元素的字体大小单位（相对单位），假设字体单位16px，那么字体单位就是1em。div  width：10em；（div盒子是十倍的父盒子字体大小）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-rem%EF%BC%9A%E7%9B%B8%E5%AF%B9%E4%BA%8E%E6%A0%B9%E5%85%83%E7%B4%A0%EF%BC%88html%EF%BC%89%E7%9A%84%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%E5%8D%95%E4%BD%8D%EF%BC%88%E7%9B%B8%E5%AF%B9%E5%8D%95%E4%BD%8D%EF%BC%89-%E3%80%82div-width%EF%BC%9A10rem%EF%BC%9B%EF%BC%88div%E7%9B%92%E5%AD%90%E6%98%AF%E5%8D%81%E5%80%8D%E7%9A%84%E6%A0%B9%E5%85%83%E7%B4%A0%E5%AD%97%E4%BD%93%E5%A4%A7%E5%B0%8F%EF%BC%89"><span class="toc-number">1.16.3.</span> <span class="toc-text">3.rem：相对于根元素（html）的字体大小单位（相对单位） 。div  width：10rem；（div盒子是十倍的根元素字体大小）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-vh%EF%BC%9Aview-height-100vh%E6%98%AF%E8%A7%86%E5%8F%A3%E7%9A%84%E9%AB%98%E5%BA%A6"><span class="toc-number">1.16.4.</span> <span class="toc-text">4.vh：view-height   100vh是视口的高度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-vw%EF%BC%9Aview-width-100vw%E6%98%AF%E8%A7%86%E5%8F%A3%E7%9A%84%E5%AE%BD%E5%BA%A6"><span class="toc-number">1.16.5.</span> <span class="toc-text">5.vw：view-width    100vw是视口的宽度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-vw%E7%9A%84%E7%AE%97%E6%B3%95"><span class="toc-number">1.16.6.</span> <span class="toc-text">6.vw的算法</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E7%99%BE%E5%88%86%E7%99%BE%E8%B7%9Fvw%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.16.7.</span> <span class="toc-text">7.百分百跟vw的关系</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E6%A0%87%E7%AD%BE/" class="archive-article-date">
-  	<time datetime="2022-04-17T10:22:06.512Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2022-04-17T05:34:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/hello-world/" class="archive-article-date">
-  	<time datetime="2022-04-17T03:14:14.909Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/17/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -390,8 +731,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="1.js面向对象方法">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+<meta property="og:url" content="http://example.com/2022/04/17/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.js面向对象方法">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20220413141931459.png">
+<meta property="article:published_time" content="2022-04-17T12:42:16.188Z">
+<meta property="article:modified_time" content="2022-04-17T12:43:11.893Z">
 <meta property="article:author" content="废废的前端笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20220413141931459.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -159,212 +165,334 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+<article id="post-js面向对象方法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-js面向对象方法"><a href="#1-js面向对象方法" class="headerlink" title="1.js面向对象方法"></a>1.js面向对象方法</h4><span id="more"></span>
+
+<h5 id="1-了解面向对象"><a href="#1-了解面向对象" class="headerlink" title="1.了解面向对象"></a>1.了解面向对象</h5><h6 id="1-面向对象是一种新的开发方式"><a href="#1-面向对象是一种新的开发方式" class="headerlink" title="1.面向对象是一种新的开发方式"></a>1.面向对象是一种新的开发方式</h6><p>1.面向过程是关注过程的开发方式（在开发过程中，我们要关注每一个顺序，步骤和过程）</p>
+<p>2.面向对象是在开发过程中，看看有没有对象能完成任务</p>
+<p>例子：一份烤鸭</p>
+<p>面向过程时：所有的事情都是自己做，考虑顺序（先杀鸭子，先切鸭子），考虑步骤（杀鸭子的时候，先干什么，后干什么），考虑细节（胡萝卜，切宽展程度）</p>
+<p>面向过程：只需要点烤鸭，并且等待结果</p>
+<p>开发过程例子：选项卡</p>
+<p>面向过程：考虑获取那些元素 ，考虑给元素绑定点击事件，考虑点击的时候做什么</p>
+<p>面向对象：考虑有没有一个对象能帮我们完成选项卡，如果有的话，直接让对象帮我们完成，如果没有，需要创造一个对象帮我们完成</p>
+<p><strong>核心：1.找到一个机器，能批量生产对象；2.生产出来的对象，每一个对象都有自己的属性和方法；3.每一个对象都类似，但内容不太一样；4.有属性和方法的合理对象</strong></p>
+<h5 id="2-创建对象的方式"><a href="#2-创建对象的方式" class="headerlink" title="2.创建对象的方式"></a>2.创建对象的方式</h5><h6 id="1-字面量方式创建对象"><a href="#1-字面量方式创建对象" class="headerlink" title="1.字面量方式创建对象"></a>1.字面量方式创建对象</h6><p>语法：var obj &#x3D;{}可以后期动态添加</p>
+<h6 id="2-内置构造函数创建对象"><a href="#2-内置构造函数创建对象" class="headerlink" title="2.内置构造函数创建对象"></a>2.内置构造函数创建对象</h6><p>语法：var obj&#x3D;new object（）可以后期动态添加</p>
+<h6 id="3-工厂函数创建对象"><a href="#3-工厂函数创建对象" class="headerlink" title="3.工厂函数创建对象"></a>3.工厂函数创建对象</h6><p><strong>1.制造一个工厂函数；2.使用工厂函数去创建对象</strong></p>
+<h6 id="4-自定义构造函数去创建对象"><a href="#4-自定义构造函数去创建对象" class="headerlink" title="4.自定义构造函数去创建对象"></a>4.自定义构造函数去创建对象</h6><p><strong>1.制造一个自定义构造函数；2.使用自定义构造函数去创建对象</strong></p>
+<p>  <strong>4-1.创造一个自定义构造函数</strong></p>
+<p>  构造函数自动创建对象，自动返回这个对象</p>
+<p>  &#x2F;&#x2F;我们只需要手动向里面添加内容就可以</p>
+<p>function createObj1(name,age){</p>
+<p>​    &#x2F;&#x2F;自动创建对象</p>
+<p>​    &#x2F;&#x2F;手动添加成员</p>
+<p>​    &#x2F;&#x2F;这里的this指向当前实例（new前面的变量）</p>
+<p>​    this.name&#x3D;name</p>
+<p>​    this.age&#x3D;age</p>
+<p>​    this.sayHi&#x3D;function(){console.log(‘hello world’)}</p>
+<p>​    &#x2F;&#x2F;自动返回对象}</p>
+<p><strong>4-2使用自定义构造函数去创建对象</strong></p>
+<p>  &#x2F;&#x2F;构造函数在使用的时候需要和new关键字连用,如果不连用那么没有意义</p>
+<p>  &#x2F;&#x2F;第一次调用createobj1的时候，和new连用了，所以craeteobj1里面的this指向了obj1，函数内部代码在执行的时候，就是像obj1添加了name，age和sayHi三个成员</p>
+<p>  var obj3&#x3D;new createObj1(‘jack’,18)</p>
+<p>  &#x2F;&#x2F;第二次调用createobj1的时候和new连用了，同上</p>
+<p>  var obj4&#x3D;new createObj1(‘rosse’,20)</p>
+<p>  console.log(obj3)</p>
+<p>  console.log(obj4)</p>
+<h6 id="3-了解构造函数的使用"><a href="#3-了解构造函数的使用" class="headerlink" title="3.了解构造函数的使用"></a>3.了解构造函数的使用</h6><p>1.它与普通函数没有差别，只是在调用的时候和new关键字连用</p>
+<p>2.书写构造函数，函数名首字母大写，当看到这个名字时，就能知道该函数要和new关键字连用</p>
+<p>function person(){  console.log(‘hello world’)  }</p>
+<p>function Person(){ this.name&#x3D;’jack’ }</p>
+<p>3.调用的时候需要和new关键字连用，只有和new关键字连用了，这个函数才能有自动创建和返回对象的能力，如果没有和new关键字连用，就没有创建对象的能力和自动返回对象的能力</p>
+<p>var obj&#x3D;new Person()    console.log(obj)</p>
+<p>4.调用构造函数的时候，如果不需要传递参数，可以不书写小括号</p>
+<p>var obj2&#x3D;new Person  console.log(obj2)</p>
+<p>5.函数名和new关键字连用时，函数内部的this指向当前实例（new关键字前面的变量），我们直接在函数体内this.xxx&#x3D;值，就是在向自动创建出来的对象里添加内容</p>
+<p>6.构造函数内部不要随便写return，当return了一个基本数据类型的时候，return是没有意义的；当return一个复杂的数据类型时，构造函数白写（return复杂函数时，return了什么函数，那么就会返回什么函数，构造函数相当于白写了）</p>
+<h6 id="4-构造函数的合理性"><a href="#4-构造函数的合理性" class="headerlink" title="4.构造函数的合理性"></a>4.构造函数的合理性</h6><p>1.当在构造函数上书写方法的时候，当需要向对象上添加方法时，只需要创建一次对象（new一次）就会有一个函数占用空间，创建了一百遍对象，会有一百个一摸一样的函数出现</p>
+<h6 id="5-原型（prototype）"><a href="#5-原型（prototype）" class="headerlink" title="5.原型（prototype）"></a>5.原型（prototype）</h6><p>1.定义：每一个函数天生自带一个属性，叫做prototype，是一个对象</p>
+<p>2.对象：每一个对象在访问它的成员时，如果他自己没有这个属性，会自动去所属的构造函数prototype上查找；自定义构造函数创建的对象也是对象，当访问某一个成员的时候，如果没有，就会自动去所属构造函数的原型上查找，哪一个构造函数创建的对象，这个对象就属于哪一个构造函数，构造函数在创建对象的过程中，我们称为实例化过程，创建出来的对象叫实例化对象</p>
+<h4 id="2-原型"><a href="#2-原型" class="headerlink" title="2.原型"></a>2.原型</h4><p>原型prototype：解决直接在实例方法对象中添加方法</p>
+<p>不好的原因：把方法书写在构造函数体内时，每创建一个实例的时候，都会创建一个函数数据类型，多个函数方法的样式都一模一样，占据了多分存储空间</p>
+<h6 id="1-概念："><a href="#1-概念：" class="headerlink" title="1.概念："></a>1.概念：</h6><p><strong>1.每一个构造函数天生自带一个prototype属性，是一个对象数据结构类型；</strong></p>
+<p>**2.每一个对象天生自带一个属性 _ _proto _ _,指向所属构造函数prototype； **</p>
+<p>元素.<strong>proto</strong>&#x3D;&#x3D;&#x3D;构造函数.prototype</p>
+<p><strong>3.当你被访问对象的成员的时候，首先在自己身上寻找，如果没有，自动去 _ _proto _ _寻找</strong></p>
+<p>function Person1(name,age){</p>
+<p>​      this.name&#x3D;name</p>
+<p>​      this.age&#x3D;age</p>
+<p>​    }</p>
+<p>​    Person1.prototype.sayHi&#x3D;function(){console.log(‘hello 美女’)}</p>
+<p>​    var p3&#x3D;new Person1(‘asvd’,18)</p>
+<p>​    var p4&#x3D;new Person1(‘zxcv’,20)</p>
+<p>​    console.log(p3)</p>
+<p>​    console.log(p3.sayHi)   此处的person内没有sayHi这个函数，但是她的原型方法上书写了这个函数，所以，这里的顺序是找完构造函数上发现没有sayHi函数才往上找Person函数的原型</p>
+<p>​    console.log(p4)</p>
+<p>​    console.log(p4.sayHi)</p>
+<p>​    console.log(p3.<strong>proto</strong>&#x3D;&#x3D;&#x3D;Person1.prototype)</p>
+<h6 id="2-如何解决问题"><a href="#2-如何解决问题" class="headerlink" title="2.如何解决问题"></a>2.如何解决问题</h6><p>1.把需要添加的实例化方法，放在构造函数的原型上，就可以有实例进行访问使用</p>
+<h6 id="3-原型含义"><a href="#3-原型含义" class="headerlink" title="3.原型含义"></a>3.原型含义</h6><p>构造函数天生自带的一个prototype，给构造函数添加方法，专门给实例对象使用</p>
+<h6 id="4-原型链"><a href="#4-原型链" class="headerlink" title="4.原型链"></a>4.原型链</h6><p>1.概念：用_ <em>proto</em> _串联的对象链状结构（使用__proto__）每一个对象数据类型，都有一个属于自己的原型链，作用是为了访问对象成员</p>
+<p>2.实例化的对象身上的__proto__指向谁？</p>
+<p>指向所属构造函数prototype，p1所属的构造函数时Person，p1.__peoto__指向Person。prototype</p>
+<p>3.Person.pertotype的__proto__指向谁</p>
+<p>Person.prototype是一个对象数据类型（object），在js内所有的object数据类型都属于object这个内置构造函数，Person.prototype属于object这个内置构造函数，Person.prototype的__proto__指向object.prototype</p>
+<p>4.Person的__proto__指向谁？</p>
+<p>Person是一个函数，函数本省也是一个对象，就会有__proto__，在js内，所有函数都属于内置函数Function的实例，Person.__proto__指向Funtion.prototype</p>
+<p>5.object.prototype的__proto__指向谁</p>
+<p>object.prototype是一个对象数据类型，只要是对象，都是数据object这个内置构造函数的，object.prototype的__proto__指向null。 注意：object.prototype在js内已经是顶级原型，不再有__proto__</p>
+<p>6.object的__proto__指向谁</p>
+<p>object是一个内置结构函数，同时也是一个函数，同时也是一个对象，在js中，所有函数都是属于内置构造函数Funtion的实例，object也是Funtion的实例，object.__proto__指向Funtion.prototype</p>
+<p>7.Funtion.prototype的__proto__指向谁</p>
+<p>Funtion.prototype也是一个对象数据类型，只要对象数据类型都是object的实例，Funtion.prototype的__proto__指向object.prototype</p>
+<p>8.Funtion的__proto__指向谁</p>
+<p>Funtion所属的构造函数是Funtion</p>
+<p><img src="C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20220413141931459.png" alt="image-20220413141931459"></p>
+<p>9.对象访问机制：</p>
+<p>1.当需要访问对象成员的时候，首先在自己身上查找，如果有直接使用，如果没有，会自动去__proto__上查找，如果没有，就会再去__proto__上查找，直到object.prototype都没有，就会返回undefind</p>
+<h4 id="3-ES6"><a href="#3-ES6" class="headerlink" title="3.ES6"></a>3.ES6</h4><h5 id="1-定义变量"><a href="#1-定义变量" class="headerlink" title="1.定义变量"></a>1.定义变量</h5><h6 id="1-新内容：let-x3D-x3D-gt-定义变量；const-x3D-gt-定义常量（特殊变量）"><a href="#1-新内容：let-x3D-x3D-gt-定义变量；const-x3D-gt-定义常量（特殊变量）" class="headerlink" title="1.新内容：let&#x3D;&#x3D;&gt;定义变量；const&#x3D;&gt;定义常量（特殊变量）"></a>1.新内容：let&#x3D;&#x3D;&gt;定义变量；const&#x3D;&gt;定义常量（特殊变量）</h6><h6 id="2-var与let-x2F-const区别"><a href="#2-var与let-x2F-const区别" class="headerlink" title="2.var与let&#x2F;const区别"></a>2.var与let&#x2F;const区别</h6><p>1.var会进行预解析，let&#x2F;const不会进行预解析</p>
+<p>不能在定义之前使用let&#x2F;const声明</p>
+<p>2.var可以声明两个重名变量。let&#x2F;const不能</p>
+<p>3.var没有块级作用域，let&#x2F;const有块级作用域</p>
+<p>if(true){ let num&#x3D;100     console.log(num) }</p>
+<p> console.log(num) ;这个不能输出，只有在if{}内部才能输出相应的值</p>
+<p>if(true){ const num&#x3D;100     console.log(num) }</p>
+<p> console.log(num) ;这个不能输出，只有在if{}内部才能输出相应的值</p>
+<h6 id="3-let和const的区别"><a href="#3-let和const的区别" class="headerlink" title="3.let和const的区别"></a>3.let和const的区别</h6><p>1.let可以定义变量的时候不进行赋值，const在定义的时候必须赋值</p>
+<p><strong>let num   console.log（num）  num&#x3D;100  console.log（num）可以输出</strong></p>
+<p><strong>const num   console.log（num）  num&#x3D;100  console.log（num）可以输出</strong></p>
+<p>2.let定义变量可以被修改，const定义的常量一经赋值不能被修改</p>
+<p><strong>let num &#x3D; 100  console.log(num)  num&#x3D;200  console.log(num)可以修改</strong></p>
+<p><strong>const num &#x3D; 100  console.log(num)  num&#x3D;200  console.log(num)不可以修改</strong></p>
+<h6 id="4-箭头函数"><a href="#4-箭头函数" class="headerlink" title="4.箭头函数"></a>4.箭头函数</h6><p>xx.onclick&#x3D;function(){}  &#x3D;&gt;xx.onclick&#x3D;()&#x3D;&gt;{}</p>
+<p>var obj &#x3D;{fn:function(){}} &#x3D;&gt;var obj &#x3D;{fn:()&#x3D;&gt;{}}</p>
+<p>xxx.forEach(function(){})&#x3D;&gt;xxx.forEach(()&#x3D;&gt;{})</p>
+<p>setTimeout(function(){})&#x3D;&gt;setTimeout(()&#x3D;&gt;{})</p>
+<p>var fn&#x3D;funtion(){}&#x3D;&gt;var fn&#x3D;()&#x3D;&gt;{}</p>
+<p>1.箭头函数的特殊之处</p>
+<p>1.箭头函数某些时候可以省略（），只有一个参数的时候可以直接省略掉（）</p>
+<p> var fn3&#x3D;a&#x3D;&gt;{console.log(‘我一个参数：’,a)}     fn3(100)</p>
+<p>2.箭头函数某些时候也能省略{}，当代码只有一句话的时候，可以不写{}，并且会自动把这一句话的结果当做函数的返回值</p>
+<p> var fn11&#x3D;(a,b)&#x3D;&gt;a+b    console.log(fn(10,20))</p>
+<p>3.箭头函数内没有arguments(类似索引)</p>
+<p>4.箭头函数内没有this，箭头函数内的this就是外部作用域的this</p>
+<p>var obj&#x3D;{ fn:function(){console.log(this)},      </p>
+<p>fn6:()&#x3D;&gt;{console.log(this)}  }</p>
+<p>​    obj.fn()&#x2F;&#x2F;this因为fn函数被obj调用，所以this是obj</p>
+<p>​    obj.fn6()&#x2F;&#x2F;因为是箭头函数，内部没有this，此时this就是外部作用域this</p>
+<h6 id="5-函数参数的默认值（构建函数的时候直接定义值）"><a href="#5-函数参数的默认值（构建函数的时候直接定义值）" class="headerlink" title="5.函数参数的默认值（构建函数的时候直接定义值）"></a>5.函数参数的默认值（构建函数的时候直接定义值）</h6><p>函数在定义的时候，可以直接给形参设置一个默认值，当没有传递实参的时候，就使用默认值，当传递了实参，就使用传递的实参，普通函数可以使用，箭头函数也可以使用</p>
+<h6 id="6-解构赋值"><a href="#6-解构赋值" class="headerlink" title="6.解构赋值"></a>6.解构赋值</h6><p>快速从对象或者数组中获取成员，解构赋值分为两种</p>
+<p>1.数组的解构赋值</p>
+<p> var arr&#x3D;[‘hello’,’world’]</p>
+<p>&#x2F;&#x2F;a获取的内容是arr【0】，b获取的内容是arr【1】</p>
+<p>​    var [a,b]&#x3D;arr</p>
+<p>​    console.log(a)</p>
+<p>​    console.log(b)</p>
+<p>2.对象的结构赋值</p>
+<p>var obj&#x3D;{name:’jack’,age:18}</p>
+<p>​    var{name,age,a}&#x3D;obj</p>
+<p>​    console.log(name)</p>
+<p>​    console.log(age)</p>
+<p>​    console.log(a)  &#x2F;&#x2F;这个变量a是函数内没有，所以这条命令运行出来的是undefined</p>
+<p>可以去一个别名，从obj中获取一个叫age的值赋值给到a  </p>
+<p> var{age：a}&#x3D;obj   console.log（a）此时的a输出的数值为18</p>
+<h6 id="7-模板字符串（定义字符串的方式）"><a href="#7-模板字符串（定义字符串的方式）" class="headerlink" title="7.模板字符串（定义字符串的方式）"></a>7.模板字符串（定义字符串的方式）</h6><p>语法：var str&#x3D;·内容·（反引号），</p>
+<p>特点：1.反引号内容可以换行；2.可以直接在字符串解析变量。需要解析变量的时候，直接书写${变量}</p>
+<p>var age&#x3D;20  var s1&#x3D;<code>我今年$&#123;age&#125;岁</code>  console.log(s1)</p>
+<h6 id="8-展开运算符"><a href="#8-展开运算符" class="headerlink" title="8.展开运算符"></a>8.展开运算符</h6><p>1.作用：展开数组的【】或者展开对象的{}</p>
+<p> &#x2F;&#x2F;合并运算</p>
+<p>​    var arr1&#x3D;[10,20]</p>
+<p>​    var arr2&#x3D;[30,40]</p>
+<p>​    var arr3&#x3D;[60,50]</p>
+<p>​    var arr4&#x3D;[70,80]</p>
+<p>​    var arr5&#x3D;[90,100]</p>
+<p>​    var arr6&#x3D;[…arr1,…arr2,…arr3,…arr4,…arr5]</p>
+<p>​    console.log(arr6)</p>
+<p>​    &#x2F;&#x2F;给函数传递参数</p>
+<p>​    var arr7&#x3D;[1,5,25,23,65,85,65,47,39,55,26]</p>
+<p>​    var max&#x3D;Math.max(…arr7)</p>
+<p>​    console.log(max)</p>
+<p>​    &#x2F;&#x2F;复制对象</p>
+<p>​    var obj&#x3D;{name:’jack’,age:18}</p>
+<p>​    var obj2&#x3D;{</p>
+<p>​      …obj,</p>
+<p>​      gender:’男’</p>
+<p>​    }</p>
+<p>​    console.log(obj2)</p>
+<h4 id="4-js前后端交互"><a href="#4-js前后端交互" class="headerlink" title="4.js前后端交互"></a>4.js前后端交互</h4><h6 id="1-Ajax前后端交互的文件"><a href="#1-Ajax前后端交互的文件" class="headerlink" title="1.Ajax前后端交互的文件"></a>1.Ajax前后端交互的文件</h6><p>1.创建ajax对象</p>
+<p>var xhr&#x3D;new XMLHttpRequest()</p>
+<p>2.配置本次请求信息</p>
+<p>xhr.open（请求方式，请求地址，是否异步）</p>
+<p>3.注册请求完成事件</p>
+<p>xhr.onload&#x3D;function（）{}</p>
+<p>4.把请求发送出去</p>
+<p>xhr.send()</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" class="archive-article-date">
-  	<time datetime="2022-04-17T12:42:16.204Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=150x150&data=http://hiluochun.github.io/022/04/17/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2022-04-17T12:42:16.188Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/jQurey/" class="archive-article-date">
-  	<time datetime="2022-04-17T12:42:16.179Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+    <a href="/2022/04/17/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/04/17/jQurey/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E5%85%83%E7%B4%A0%E7%B1%BB%E5%9E%8B/" class="archive-article-date">
-  	<time datetime="2022-04-17T10:22:06.544Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E5%B1%9E%E6%80%A7/" class="archive-article-date">
-  	<time datetime="2022-04-17T10:22:06.528Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-js%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">1.js面向对象方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E4%BA%86%E8%A7%A3%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.1.</span> <span class="toc-text">1.了解面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%98%AF%E4%B8%80%E7%A7%8D%E6%96%B0%E7%9A%84%E5%BC%80%E5%8F%91%E6%96%B9%E5%BC%8F"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.面向对象是一种新的开发方式</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">2.创建对象的方式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E5%AD%97%E9%9D%A2%E9%87%8F%E6%96%B9%E5%BC%8F%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.字面量方式创建对象</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%86%85%E7%BD%AE%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.内置构造函数创建对象</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%B7%A5%E5%8E%82%E5%87%BD%E6%95%B0%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.工厂函数创建对象</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E5%8E%BB%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.2.4.</span> <span class="toc-text">4.自定义构造函数去创建对象</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E4%BA%86%E8%A7%A3%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.5.</span> <span class="toc-text">3.了解构造函数的使用</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E5%90%88%E7%90%86%E6%80%A7"><span class="toc-number">1.2.6.</span> <span class="toc-text">4.构造函数的合理性</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E5%8E%9F%E5%9E%8B%EF%BC%88prototype%EF%BC%89"><span class="toc-number">1.2.7.</span> <span class="toc-text">5.原型（prototype）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E5%8E%9F%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">2.原型</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E6%A6%82%E5%BF%B5%EF%BC%9A"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.概念：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E9%97%AE%E9%A2%98"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.如何解决问题</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-%E5%8E%9F%E5%9E%8B%E5%90%AB%E4%B9%89"><span class="toc-number">2.0.3.</span> <span class="toc-text">3.原型含义</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="toc-number">2.0.4.</span> <span class="toc-text">4.原型链</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-ES6"><span class="toc-number">3.</span> <span class="toc-text">3.ES6</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">3.1.</span> <span class="toc-text">1.定义变量</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-%E6%96%B0%E5%86%85%E5%AE%B9%EF%BC%9Alet-x3D-x3D-gt-%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F%EF%BC%9Bconst-x3D-gt-%E5%AE%9A%E4%B9%89%E5%B8%B8%E9%87%8F%EF%BC%88%E7%89%B9%E6%AE%8A%E5%8F%98%E9%87%8F%EF%BC%89"><span class="toc-number">3.1.1.</span> <span class="toc-text">1.新内容：let&#x3D;&#x3D;&gt;定义变量；const&#x3D;&gt;定义常量（特殊变量）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-var%E4%B8%8Elet-x2F-const%E5%8C%BA%E5%88%AB"><span class="toc-number">3.1.2.</span> <span class="toc-text">2.var与let&#x2F;const区别</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-let%E5%92%8Cconst%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">3.1.3.</span> <span class="toc-text">3.let和const的区别</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#4-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="toc-number">3.1.4.</span> <span class="toc-text">4.箭头函数</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#5-%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E7%9A%84%E9%BB%98%E8%AE%A4%E5%80%BC%EF%BC%88%E6%9E%84%E5%BB%BA%E5%87%BD%E6%95%B0%E7%9A%84%E6%97%B6%E5%80%99%E7%9B%B4%E6%8E%A5%E5%AE%9A%E4%B9%89%E5%80%BC%EF%BC%89"><span class="toc-number">3.1.5.</span> <span class="toc-text">5.函数参数的默认值（构建函数的时候直接定义值）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#6-%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-number">3.1.6.</span> <span class="toc-text">6.解构赋值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#7-%E6%A8%A1%E6%9D%BF%E5%AD%97%E7%AC%A6%E4%B8%B2%EF%BC%88%E5%AE%9A%E4%B9%89%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%89"><span class="toc-number">3.1.7.</span> <span class="toc-text">7.模板字符串（定义字符串的方式）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#8-%E5%B1%95%E5%BC%80%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">3.1.8.</span> <span class="toc-text">8.展开运算符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-js%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92"><span class="toc-number">4.</span> <span class="toc-text">4.js前后端交互</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-Ajax%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">4.0.1.</span> <span class="toc-text">1.Ajax前后端交互的文件</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E6%A0%87%E7%AD%BE/" class="archive-article-date">
-  	<time datetime="2022-04-17T10:22:06.512Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2022-04-17T05:34:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2022/04/17/hello-world/" class="archive-article-date">
-  	<time datetime="2022-04-17T03:14:14.909Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/04/17/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -390,8 +518,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
