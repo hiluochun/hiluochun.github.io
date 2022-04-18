@@ -15,13 +15,10 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="CSS元素类型">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20220320110124129.png">
-<meta property="og:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20220320111219562.png">
 <meta property="article:published_time" content="2022-04-17T13:20:55.000Z">
-<meta property="article:modified_time" content="2022-04-18T02:22:21.214Z">
+<meta property="article:modified_time" content="2022-04-18T04:08:33.520Z">
 <meta property="article:author" content="废废的前端笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:/Users/49154/AppData/Roaming/Typora/typora-user-images/image-20220320110124129.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -264,8 +261,133 @@
 <h6 id="2-适用类型"><a href="#2-适用类型" class="headerlink" title="2.适用类型"></a>2.适用类型</h6><p>任何计算都可以使用calc函数进行计算</p>
 <p>calc函数支持：“+”，“-”，“*”，“&#x2F;”运算</p>
 <p>clac（）函数使用标准的数学运算优先级规则</p>
-<p>两栏布局： <a href="D:\DW文件\练习1（vs）\css2\两栏布局2.html">两栏布局2.html</a> </p>
-<p>三栏布局： <a href="D:\DW文件\练习1（vs）\css2\三栏布局1.html">三栏布局1.html</a>  <a href="D:\DW文件\练习1（vs）\css2\三栏布局2.html">三栏布局2.html</a> </p>
+<p>两栏布局：</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html,body{
+            height: 100%;
+        }
+        .box1{
+            width: 200px;
+            height: 100%;
+            background: red;
+            float: left;
+        }
+        .box2{
+            height: 100%;
+            background: yellowgreen;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
+
+<p>三栏布局：  </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html,body{
+            height: 100%;
+        }
+        .top,.bottom{
+            width: 100%;
+            height: 50px;
+            background: #ccc;
+        }
+        .middle{
+            height: calc(100% - 100px);
+            background: chartreuse;
+        }
+        .left,.right{
+            width: 100px;
+            height: 100%;
+            background: chocolate;
+            float: left;
+        }
+        .center{
+            width: calc(100% - 200px);
+            height: 100%;
+            background: cornflowerblue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="middle">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+</div>
+<div class="bottom"></div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*使用这种办法要先把center跟right的div换个位置，因为要先把right的盒子先进行右浮动，先进行浮动才能填满整个界面，要是先写center会造成右盒子下移*/
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        html,body{
+            height: 100%;
+        }
+        .left,.right{
+            width: 200px;
+            height: 100%;
+        }
+        .left{
+            background: mediumorchid;
+            float: left;
+        }
+        .right{
+            background: hotpink;
+            float: right;
+        }
+        .center{ 
+            height: 100%;
+            margin-left: 200px;
+            margin-right: 200px;
+            background: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="center"></div>
+</body>
+</html>
+
 <h5 id="9-渐变"><a href="#9-渐变" class="headerlink" title="9.渐变"></a>9.渐变</h5><h6 id="1-线性渐变"><a href="#1-线性渐变" class="headerlink" title="1.线性渐变"></a>1.线性渐变</h6><p>定义：从一个颜色到另一个颜色的过渡。由浏览器产生，支持多颜色渐变</p>
 <p>语法：background: linear-gradient();</p>
 <p>1.括号里面直接填颜色，</p>
@@ -291,8 +413,36 @@
 <p>减速：ease-out</p>
 <p>先加速后减速：ease-in-out</p>
 <p>贝塞尔曲线：调整相关的速度</p>
-<h5 id="11-2D属性（transform）"><a href="#11-2D属性（transform）" class="headerlink" title="11.2D属性（transform）"></a>11.2D属性（transform）</h5><h6 id="1-平移"><a href="#1-平移" class="headerlink" title="1.平移"></a>1.平移</h6><p><img src="C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20220320110124129.png" alt="image-20220320110124129"></p>
-<p><img src="C:\Users\49154\AppData\Roaming\Typora\typora-user-images\image-20220320111219562.png" alt="image-20220320111219562"></p>
+<h5 id="11-2D属性（transform）"><a href="#11-2D属性（transform）" class="headerlink" title="11.2D属性（transform）"></a>11.2D属性（transform）</h5><h6 id="1-平移"><a href="#1-平移" class="headerlink" title="1.平移"></a>1.平移</h6><p>原理<br>在CSS3中，可以使用translate()方法将元素沿着水平方向（X轴）和垂直方向（Y轴）移动。<br>对于位移translate()方法，我们分为3种情况：</p>
+<p>ranslateX(x)：元素仅在水平方向移动（X轴移动）；<br>translateY(y)：元素仅在垂直方向移动（Y轴移动）；<br>transklate(x,y)：元素在水平方向和垂直方向同时移动（X轴和Y轴同时移动）<br>其中：</p>
+<p>x表示元素在水平方向（X轴）的移动距离，当x为正时，表示元素在水平方向向右移动（X轴正方向）；当x为负时，表示元素在水平方向向左移动（X轴负方向）。<br>y表示元素在水平方向（y轴）的移动距离，当y为正时，表示元素在垂直方向向下移动；当y为负时，表示元素在垂直方向向上移动。<br>在W3C规定中，出于人的习惯是从上到下阅读，所选取的坐标系中x轴正方向向右，而y轴正方向向下。<br>在CSS3中，所有变形方法都是属于transform属性，因此所有关于变形的方法前面都要加上“tranform:”，以表示“变形”处理。这一点大家一定要记住。<br>单位为px、em或百分比等，x,y为百分数时，是相当于移动的元素的宽+padding，高+padding的百分比。<br>示例：元素在网页中居中<br>代码：</p>
+<html>
+    <head>
+        <title>元素页面正中间居中</title>
+        <style>
+                html,body{
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #2b9f6b
+            }
+            div{
+              width: 450px;
+                height: 300px;
+                background-color: #abcdef;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+            }
+        </style>
+    </head>
+​	<body>
+        <div>待居中元素</div>
+​	</body>
+</html>
+
 <p>transform: translateX(-100%);是盒子整个的大小</p>
 <h6 id="2-scale-96"><a href="#2-scale-96" class="headerlink" title="2.scale()&#96;"></a>2.scale()&#96;</h6><p>定义：用于修改元素的大小。可以通过向量形式定义的缩放值来放大或缩小元素，同时可以在不同的方向设置不同的缩放值</p>
 <h6 id="3-transform-origin"><a href="#3-transform-origin" class="headerlink" title="3.transform-origin"></a>3.transform-origin</h6><p>定义：改变中心点的位置</p>
